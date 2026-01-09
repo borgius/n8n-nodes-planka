@@ -1,4 +1,5 @@
 import {
+    Icon,
     ICredentialTestRequest,
     ICredentialType,
     INodeProperties
@@ -8,6 +9,7 @@ export class PlankaApi implements ICredentialType {
     name = 'plankaApi';
     displayName = 'Planka API';
     documentationUrl = '';
+    icon: Icon = "file:../nodes/Planka/planka.svg";
     properties: INodeProperties[] = [
         {
             displayName: 'API URL',
