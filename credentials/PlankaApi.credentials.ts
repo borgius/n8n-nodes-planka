@@ -8,8 +8,8 @@ import {
 export class PlankaApi implements ICredentialType {
     name = 'plankaApi';
     displayName = 'Planka API';
-    documentationUrl = '';
-    icon: Icon = "file:../nodes/Planka/planka.png";
+    documentationUrl = 'https://docs.planka.cloud/docs/category/api-reference/';
+    icon: Icon = "file:../nodes/Planka/planka.svg";
     properties: INodeProperties[] = [
         {
             displayName: 'API URL',
