@@ -1,6 +1,6 @@
 # n8n-nodes-planka
 
-[![npm version](https://badge.fury.io/js/n8n-nodes-planka-en.svg)](https://badge.fury.io/js/n8n-nodes-planka-en)
+[![npm version](https://badge.fury.io/js/@taistudio/n8n-nodes-planka.svg)](https://badge.fury.io/js/@taistudio/n8n-nodes-planka)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 n8n community node for Planka - Open Source Project Management
