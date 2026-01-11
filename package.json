@@ -1,6 +1,6 @@
 {
     "name": "@taistudio/n8n-nodes-planka",
-    "version": "26.1.10",
+    "version": "26.1.11",
     "description": "n8n community node for Planka - Open Source Project Management",
     "license": "MIT",
     "homepage": "https://github.com/TaiStudio/n8n-nodes-planka",
@@ -22,13 +22,13 @@
     },
     "scripts": {
         "start": "N8N_SECURE_COOKIE=false && n8n start",
-        "build": "n8n-node build",
+        "build": "n8n-node build && cp nodes/Planka/* dist/nodes/Planka/",
         "build:watch": "tsc --watch",
         "dev": "n8n-node dev",
         "dev2": "npm run build && npm link",
         "lint": "n8n-node lint",
         "lint:fix": "n8n-node lint --fix",
-        "release": "cp nodes/Planka/* dist/nodes/Planka/ && n8n-node release",
+        "release": " n8n-node release",
         "prepublishOnly": "n8n-node prerelease"
     },
     "files": [
