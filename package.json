@@ -41,7 +41,6 @@
             "dist/credentials/PlankaApi.credentials.ts"
         ],
         "nodes": [
-            "dist/nodes/Planka/GenericFunctions.js",
             "dist/nodes/Planka/Planka.node.js"
         ]
     },
