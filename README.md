@@ -41,7 +41,7 @@ This node uses **email/password** authentication against the Planka API (not API
 
 > **Important:** The API URL must include the `/api` suffix (e.g. `https://planka.example.com/api`).
 
-![Planka Credentials](assets/credentials.png)
+![Planka Credentials](https://raw.githubusercontent.com/borgius/n8n-nodes-planka/main/assets/credentials.png)
 
 ## Usage
 
