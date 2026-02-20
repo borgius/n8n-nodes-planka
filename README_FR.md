@@ -1,27 +1,27 @@
 # n8n-nodes-planka
 
-[![version npm](https://badge.fury.io/js/@taistudio%2Fn8n-nodes-planka.svg.svg)](https://badge.fury.io/js/@taistudio%2Fn8n-nodes-planka.svg)
-[![Licence : MIT](https://img.shields.io/badge/Licence-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/@taistudio%2Fn8n-nodes-planka.svg.svg)](https://badge.fury.io/js/@taistudio%2Fn8n-nodes-planka.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Node communautaire n8n pour Planka - Gestion de Projet Open Source
+n8n community node for Planka - Open Source Project Management
 
-## 🌟 Fonctionnalités
+## 🌟 Features
 
-Ce node n8n vous permet d'intégrer Planka avec vos workflows n8n, offrant des capacités complètes de gestion de projet :
+This n8n node allows you to integrate Planka with your n8n workflows, providing comprehensive project management capabilities:
 
-- **🏢 Gestion de Projet** : Créer, lire, mettre à jour et supprimer des projets
-- **📋 Gestion de Tableau** : Gérer les tableaux, listes, étiquettes et membres
-- **📝 Gestion de Carte** : Gérer les cartes, tâches, commentaires et pièces jointes
-- **👤 Gestion d'Utilisateur** : Opérations liées aux utilisateurs et permissions
+- **🏢 Project Management**: Create, read, update and delete projects
+- **📋 Board Management**: Manage boards, lists, labels and members
+- **📝 Card Management**: Manage cards, tasks, comments and attachments
+- **👤 User Management**: User-related operations and permissions
 
 ## 🔧 Installation
 
-### Option 1 : Installer depuis npm
+### Option 1: Install from npm
 ```bash
 npm install @taistudio/n8n-nodes-planka
 ```
 
-### Option 2 : Installer depuis la source
+### Option 2: Install from source
 ```bash
 git clone https://github.com/TaiStudio/n8n-nodes-planka.git
 cd n8n-nodes-planka
@@ -29,118 +29,118 @@ npm install
 npm run build
 ```
 
-## 🚀 Utilisation
+## 🚀 Usage
 
-1. **Installez le node** en utilisant une des méthodes ci-dessus
-2. **Redémarrez n8n** pour charger le nouveau node
-3. **Configurez les identifiants Planka** :
-   - URL de l'API (ex: `https://votre-instance-planka.com`)
-   - Jeton d'API (depuis les paramètres utilisateur de Planka)
-4. **Utilisez le node** dans vos workflows avec les ressources suivantes :
-   - Opérations de projet
-   - Opérations de tableau
-   - Opérations de carte
-   - Opérations d'utilisateur
+1. **Install the node** using one of the methods above
+2. **Restart n8n** to load the new node
+3. **Configure Planka credentials**:
+   - API URL (e.g. `https://your-planka-instance.com`)
+   - API token (from Planka user settings)
+4. **Use the node** in your workflows with the following resources:
+   - Project operations
+   - Board operations
+   - Card operations
+   - User operations
 
-## 🔐 Authentification
+## 🔐 Authentication
 
-Le node utilise l'authentification par jeton d'API. Pour obtenir votre jeton :
+The node uses API token authentication. To obtain your token:
 
-1. Connectez-vous à votre instance Planka
-2. Allez dans Paramètres → API
-3. Générez un nouveau jeton d'API
-4. Utilisez ce jeton dans la configuration des identifiants n8n
+1. Log in to your Planka instance
+2. Go to Settings → API
+3. Generate a new API token
+4. Use this token in the n8n credentials configuration
 
-## 🆕 Compatibilité
+## 🆕 Compatibility
 
-### ✅ Support de Planka 2.0.0-rc.4
-Cette version est **entièrement compatible** avec Planka **2.0.0-rc.4** et inclut :
+### ✅ Planka 2.0.0-rc.4 Support
+This version is **fully compatible** with Planka **2.0.0-rc.4** and includes:
 
-- Points d'accès API mis à jour pour la dernière version de Planka
-- Support des nouvelles fonctionnalités introduites dans 2.0.0-rc.4
-- Compatibilité descendante avec les versions antérieures de Planka
-- Gestion améliorée des erreurs et validation
+- Updated API endpoints for the latest Planka version
+- Support for new features introduced in 2.0.0-rc.4
+- Backward compatibility with earlier Planka versions
+- Improved error handling and validation
 
-### Versions de Planka Supportées
-- ✅ Planka 2.0.0-rc.4 (Recommandé)
-- ✅ Planka 1.x.x (Support hérité)
+### Supported Planka Versions
+- ✅ Planka 2.0.0-rc.4 (Recommended)
+- ✅ Planka 1.x.x (Legacy support)
 
-## 📚 Opérations Disponibles
+## 📚 Available Operations
 
-### Ressource Projet
-- `getAll` : Lister tous les projets
-- `get` : Obtenir un projet spécifique
-- `create` : Créer un nouveau projet
-- `update` : Mettre à jour un projet existant
-- `delete` : Supprimer un projet
+### Project Resource
+- `getAll`: List all projects
+- `get`: Get a specific project
+- `create`: Create a new project
+- `update`: Update an existing project
+- `delete`: Delete a project
 
-### Ressource Tableau
-- `getAll` : Lister tous les tableaux d'un projet
-- `get` : Obtenir un tableau spécifique
-- `create` : Créer un nouveau tableau
-- `update` : Mettre à jour un tableau existant
-- `delete` : Supprimer un tableau
+### Board Resource
+- `getAll`: List all boards in a project
+- `get`: Get a specific board
+- `create`: Create a new board
+- `update`: Update an existing board
+- `delete`: Delete a board
 
-### Ressource Carte
-- `getAll` : Lister toutes les cartes d'une liste
-- `get` : Obtenir une carte spécifique
-- `create` : Créer une nouvelle carte
-- `update` : Mettre à jour une carte existante
-- `delete` : Supprimer une carte
-- `addComment` : Ajouter un commentaire à une carte
-- `addAttachment` : Ajouter une pièce jointe à une carte
+### Card Resource
+- `getAll`: List all cards in a list
+- `get`: Get a specific card
+- `create`: Create a new card
+- `update`: Update an existing card
+- `delete`: Delete a card
+- `addComment`: Add a comment to a card
+- `addAttachment`: Add an attachment to a card
 
-### Ressource Utilisateur
-- `getAll` : Lister tous les utilisateurs
-- `get` : Obtenir un utilisateur spécifique
-- `getCurrent` : Obtenir les informations de l'utilisateur actuel
+### User Resource
+- `getAll`: List all users
+- `get`: Get a specific user
+- `getCurrent`: Get current user information
 
-## 🐛 Dépannage
+## 🐛 Troubleshooting
 
-### Problèmes Courants
+### Common Issues
 
-1. **Erreurs d'Authentification**
-   - Vérifiez que votre jeton d'API est correct
-   - Assurez-vous que l'URL de votre instance Planka est accessible
-   - Vérifiez que le jeton a les permissions suffisantes
+1. **Authentication Errors**
+   - Verify that your API token is correct
+   - Make sure your Planka instance URL is accessible
+   - Check that the token has sufficient permissions
 
-2. **Incompatibilité de Version API**
-   - Assurez-vous d'utiliser Planka 2.0.0-rc.4 ou une version compatible
-   - Vérifiez la version de votre instance Planka dans Paramètres → À propos
+2. **API Version Incompatibility**
+   - Make sure you are using Planka 2.0.0-rc.4 or a compatible version
+   - Check your Planka instance version in Settings → About
 
-3. **Problèmes de Connexion**
-   - Vérifiez la connectivité réseau vers votre instance Planka
-   - Vérifiez s'il y a des restrictions de pare-feu
-   - Assurez-vous que HTTPS est correctement configuré si vous utilisez SSL
+3. **Connection Issues**
+   - Check network connectivity to your Planka instance
+   - Check for firewall restrictions
+   - Make sure HTTPS is properly configured if you are using SSL
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! N'hésitez pas à soumettre une Pull Request.
+Contributions are welcome! Feel free to submit a Pull Request.
 
-1. Fork le dépôt
-2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commitez vos changements (`git commit -m 'Ajouter une fonctionnalité incroyable'`)
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add an amazing feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Liens
+## 🔗 Links
 
 - [n8n](https://n8n.io/)
 - [Planka](https://planka.app/)
 - [Planka GitHub](https://github.com/plankanban/planka)
-- [Nodes Communautaires n8n](https://github.com/n8n-io/n8n-nodes-community)
+- [n8n Community Nodes](https://github.com/n8n-io/n8n-nodes-community)
 
 ## 📞 Support
 
-Si vous rencontrez des problèmes ou avez des questions :
+If you encounter issues or have questions:
 
-- Créez une issue sur [GitHub Issues](https://github.com/TaiStudio/n8n-nodes-planka/issues)
-- Contactez le mainteneur : tai.studio@outlook.fr
+- Create an issue on [GitHub Issues](https://github.com/TaiStudio/n8n-nodes-planka/issues)
+- Contact the maintainer: tai.studio@outlook.fr
 
 ---
 
-**Note** : Ceci est un node maintenu par la communauté et n'est pas officiellement supporté par les équipes n8n ou Planka.
+**Note**: This is a community-maintained node and is not officially supported by the n8n or Planka teams.

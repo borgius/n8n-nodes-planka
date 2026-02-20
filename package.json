@@ -29,6 +29,8 @@
         "lint": "n8n-node lint",
         "lint:fix": "n8n-node lint --fix",
         "release": " n8n-node release",
+        "test": "jest",
+        "test:integration": "jest --testPathPattern=__tests__",
         "prepublishOnly": "n8n-node prerelease"
     },
     "files": [
@@ -46,7 +48,10 @@
     },
     "devDependencies": {
         "@n8n/node-cli": "*",
+        "axios": "^1.13.5",
+        "dotenv": "^17.3.1",
         "eslint": "9.32.0",
+        "jest": "^30.2.0",
         "prettier": "3.6.2",
         "release-it": "^19.0.4",
         "typescript": "5.9.2"

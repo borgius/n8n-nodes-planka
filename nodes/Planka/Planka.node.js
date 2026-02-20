@@ -322,7 +322,7 @@ class Planka {
                         {
                             name: '💬 Create Comment on Card',
                             value: 'createCardComment',
-                            description: 'Añadir un comentario a una tarjeta',
+                            description: 'Add a comment to a card',
                             action: 'Create a comment on a card',
                         },
                         {
@@ -444,7 +444,7 @@ class Planka {
                     default: '',
                     description: 'Name of the project',
                 },
-                // Project additional fields - reemplazados por parámetros individuales
+                // Project additional fields - replaced by individual parameters
                 {
                     displayName: 'Background Name',
                     name: 'backgroundName',
