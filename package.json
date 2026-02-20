@@ -31,7 +31,7 @@
         "release": "npm run build && release-it",
         "test": "jest",
         "test:integration": "jest --testPathPattern=__tests__",
-        "prepublishOnly": "n8n-node prerelease"
+        "prerelease": "n8n-node prerelease"
     },
     "files": [
         "dist"
