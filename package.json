@@ -30,8 +30,7 @@
         "lint:fix": "n8n-node lint --fix",
         "release": "npm run build && release-it",
         "test": "jest",
-        "test:integration": "jest --testPathPattern=__tests__",
-        "prerelease": "n8n-node prerelease"
+        "test:integration": "jest --testPathPattern=__tests__"
     },
     "files": [
         "dist"
